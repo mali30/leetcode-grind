@@ -47,6 +47,11 @@ class mergeSortedArray {
         int arrLengthPointer = nums1.length - 1;
 
         while (arrLengthPointer >= 0) {
+            /**
+             * This if-else check handles the cases like this
+             * [0] 0
+             * [1] 1
+             */
             if (nums1Pointer < 0) {
                 nums1[arrLengthPointer] = nums2[nums2Pointer--];
             } else if (nums2Pointer < 0) {
